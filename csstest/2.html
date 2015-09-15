@@ -1,0 +1,74 @@
+<html lang="zh">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+    .demo1 {
+        transform: rotateX(45deg);
+        transform-origin: bottom;
+        width: 522px;
+        height: 509px;
+        background-color: rebeccapurple;
+        position: absolute;
+        left: 50%;
+        margin-left: -210px;
+        top: 200px;
+        -webkit-mask-image: url(1.png);
+        background-repeat: no-repeat;
+        -webkit-animation-name: test1;
+        -webkit-animation-duration: 2s;
+        /* border: solid #FFE24E; */
+    }
+    
+    @-webkit-keyframes test1 {
+        0% {
+            opacity: 0
+        }
+        10% {
+            opacity: 1
+        }
+        90% {
+            opacity: 1
+        }
+        100% {
+            opacity: 0
+        }
+    }
+    
+    .font-shine {
+        -webkit-animation: shine 1.5s ease-in-out infinite alternate;
+        -moz-animation: shine 1.5s ease-in-out infinite alternate;
+        animation: shine 1.5s ease-in-out infinite alternate;
+        font-size: 56px;
+        color: #FFEFD8;
+    }
+    
+    @-webkit-keyframes shine {
+        from {
+            text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #FF9900, 0 0 70px #FF9900, 0 0 80px #FF9900, 0 0 100px #FF9900, 0 0 150px #FF9900;
+            color: #FFEFD8;
+        }
+        to {
+            text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #FF9900, 0 0 35px #FF9900, 0 0 40px #FF9900, 0 0 50px #FF9900, 0 0 75px #FF9900;
+        }
+    }
+    
+    body {
+        background-color: #382D2D;
+    }
+    </style>
+</head>
+
+<body>
+    <div style="perspective: 500px;  transition: 1s;">
+        <div class="demo1"></div>
+    </div>
+    <span class="font-shine">I GO OUT SIX ONE SIX</span>
+    <span class="font-shine">我就随便玩玩而已</span>
+</body>
+
+</html>
